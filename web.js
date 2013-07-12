@@ -1,6 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-var infile = "index.html";
+var infile = "bitstarter.html";
 var web_page=fs.readFileSync(infile, 'utf8');
 
 var app = express.createServer(express.logger());
