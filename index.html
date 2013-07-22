@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>My First Bitstarter</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
@@ -25,7 +26,6 @@
     border-left: 1px white solid;
   }
  }
-
 /*Landscape phones and down */
 @media (max-width: 480px){
 	.copy{
@@ -46,8 +46,8 @@ body{
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .heading, .subheading{
-font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-text-align: center;
+font-family: 'Ubuntu' Helvetica, Arial, sans-serif;
+text align: center;
 }
 p.lead {
 	padding-top: 1.5%;
@@ -56,7 +56,7 @@ p.lead {
 }
 p {
 	font-size: 18px;
-	line-height: 24px;
+	line height: 24px;
 }
 
 /* Video pitch and Action */
@@ -70,14 +70,14 @@ p {
 	background-color: #343434;
 	padding: 3% 0%;
 }
-.video, .thermometer, .order, .social, .statistics {
+.video, thermometer, .order, .social, statistics {
 	text-align: center;
 }
 .statistics h3, .statistics p {
 	color: white;
 }
 
-/* Marketing Copy and Footer */
+/*Marketing Coppy and foofter */
 .copy {
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
@@ -86,18 +86,17 @@ text-align: justify;
 .asset {
 	padding: 2.5% 0%;
 }
-
 	</style>
 </head>
-<body>
 
+<body>
 		<!-- Mobile-friendly navbar adapted from example. -->
 		<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<button type="button" class="btn btn-navbar"
-							data-toggle="collapse" data-target=".nav-collapse">
+							data-toggle="collapse" data-target= ".nav-vollapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -114,11 +113,11 @@ text-align: justify;
 			</div>
 		</div>
 		
-		<!-- We use row-fluid inside containers to achieve a resizable layout. -->
-		<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+		<!-- We use row-fluid inside containers to achive a resizable layout. -->
+		<!-- blogs.endjin.com/2013/04/tips for implementing-responsive designs-using bootstrap/ -->
 		<!-- http://stackoverflow.com/a/12270322 -->
-		<div class="container">
-			<!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+		<div class "container">
+			<!-- Font and paired front of .heading/ .subheading and body from Google fonts -->
 			<!-- www.google.com/fonts/specimen/Ubuntu -->
 			<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
 		<div class="row-fluid heading">
@@ -137,8 +136,8 @@ text-align: justify;
 			<div class="span5 offset1 video">
 				<img class="img-polaroid" src="http://placehold.it/480x300">
 		</div>
-		<!-- We define a new 'actions' div to contain statistics, order and share buttons.-->
-		<div class="span5 actions">
+		<!-- We define a new 'actions' div to contain statistics, order and share buttons-->
+		<div class="snap5 actions">
 			<div class="span8 offset2">
 				<div class="statistics">
 					<div class="span4">
@@ -225,6 +224,42 @@ text-align: justify;
 	</div>
 <div class="span5 asset">
 	<img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+</div>
+<!-- For the FAQ, we introduce a little bit of JS, ussing the accordion. -->
+<!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+<!-- hhtp://twitter.github.io/bootstrap/javascript.htlm#collapse -->
+<div class="row-fluid faq">
+	<div class="span10 offset1">
+		<h3>FAQ</h3>
+		<div class="accordion" id="accordion2">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#accordion2" href="#collapseOne">
+					What does FAQ stand for?
+					</a>
+				</div>
+				<div id="collapseOne" class="accordion-body collapse">
+					<div class="accortion-inner">
+						Frequently Asked Question.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#accordion2" href="#collapseTwo">
+						What's a Frequently Asked Question?
+					</a>
+					</div>
+					<div id="collapseTwo" class="accordion-body collapse">
+						<div class="accordion-inner">
+						A question which is commonly asked by users.
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
