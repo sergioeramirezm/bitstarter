@@ -97,6 +97,13 @@
 	.footer a {
 	color: #ccccff;
 	}
+
+/* To Center the AddThis buttons, this CSS style is added. For more information,
+http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
+
+	div.addthis_toolbox {
+		width:180px;
+		margin: 0 auto;
 	</style>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -196,9 +203,10 @@
 			</div>
 			<div class="row-fluid">
 			<div class="span6 offset3 order">
-				<!-- Standard Bootstrap button. -->
-				<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-				<button class="btn btn-success btn-large">Preorder</button>
+				<!-- Coinbase Button for Bitcoin Payments -->
+				<a class="coinbase-button" data-code="4d4b84bbad4508b64b61d372ea394dad"
+				 href="https://coinbase.com/checkouts/4d4b84bbad4508b64b61d372ea394dad">Pay With Bitcoin</a>
+<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
 				</div>
 				</div>
 			<div class="row-fluid">
